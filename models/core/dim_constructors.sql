@@ -1,3 +1,5 @@
+-- sample sample sample
+
 WITH constructors AS (
     SELECT * FROM {{ ref('stg_constructors') }}
 )
