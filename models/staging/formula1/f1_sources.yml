@@ -10,7 +10,7 @@ sources:
       - name: circuits
         description: One record per circuit, which is the specific race course. 
         columns:
-          - name: circuit_id
+          - name: circuitid
             tests:
             - unique
             - not_null

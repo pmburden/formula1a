@@ -29,6 +29,7 @@ circuits as (
         int_results.circuit_id,
         int_results.race_name,
         circuit_ref,
+        circuit_name,
         circuit_location,
         circuit_country,
         latitude,
