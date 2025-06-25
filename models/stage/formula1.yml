@@ -1,0 +1,89 @@
+sources:
+  - name: raw
+    database: formula1
+    schema: raw
+    tables:
+      - name: circuits
+        columns:
+          - name: circuit_id
+            data_type: number
+          - name: circuit_ref
+            data_type: varchar
+          - name: name
+            data_type: varchar
+          - name: location
+            data_type: varchar
+          - name: country
+            data_type: varchar
+          - name: lat
+            data_type: float
+          - name: lng
+            data_type: float
+          - name: alt
+            data_type: number
+          - name: url
+            data_type: varchar
+
+      - name: constructors
+        columns:
+          - name: constructor_id
+            data_type: number
+          - name: constructor_ref
+            data_type: varchar
+          - name: name
+            data_type: varchar
+          - name: nationality
+            data_type: varchar
+          - name: url
+            data_type: varchar
+
+      - name: constructor_results
+        columns:
+          - name: constructor_results_id
+            data_type: number
+          - name: race_id
+            data_type: number
+          - name: constructor_id
+            data_type: number
+          - name: points
+            data_type: number
+          - name: status
+            data_type: varchar
+
+      - name: constructor_standings
+        columns:
+          - name: constructor_standings_id
+            data_type: number
+          - name: race_id
+            data_type: number
+          - name: constructor_id
+            data_type: number
+          - name: points
+            data_type: number
+          - name: position
+            data_type: float
+          - name: position_text
+            data_type: varchar
+          - name: wins
+            data_type: number
+
+      - name: drivers
+        columns:
+          - name: driver_id
+            data_type: number
+          - name: driver_ref
+            data_type: varchar
+          - name: number
+            data_type: varchar
+          - name: code
+            data_type: varchar
+          - name: forename
+            data_type: varchar
+          - name: surname
+            data_type: varchar
+          - name: dob
+            data_type: date
+          - name: nationality
+            data_type: varchar
+          - name: url
+            data_type: varchar
