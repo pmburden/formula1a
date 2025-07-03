@@ -9,7 +9,7 @@
 version: 2
 
 models:
-      - name: CIRCUITS
+      - name: GENERATED_CIRCUITS
         description: ""
         columns:
           - name: CIRCUIT_ID
