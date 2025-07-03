@@ -1,0 +1,107 @@
+# --------------------------------------------------------------------
+# Auto-generated source YAML
+# date_generated: 2025-07-03
+# generated_by: generate_source_yaml_with_variant_recursive
+# source: formula1.raw.circuits
+# sample_size: 100
+# max_depth: 3
+# --------------------------------------------------------------------
+version: 2
+
+models:
+      - name: CIRCUITS
+        description: ""
+        columns:
+          - name: CIRCUIT_ID
+            description: ""
+            meta:
+              data_type: NUMBER
+              is_data_column: Y
+              is_key_column: Y
+              key_order: 1
+          - name: CIRCUIT_REF
+            description: ""
+            meta:
+              data_type: VARCHAR
+              is_data_column: Y
+              is_key_column: Y
+              key_order: 2
+          - name: NAME
+            description: ""
+            meta:
+              data_type: VARCHAR
+              is_data_column: Y
+              is_rowhash_column: Y
+              rowhash_order: 1
+          - name: LOCATION
+            description: ""
+            meta:
+              data_type: VARCHAR
+              is_data_column: Y
+              is_rowhash_column: Y
+              rowhash_order: 3
+          - name: COUNTRY
+            description: ""
+            meta:
+              data_type: VARCHAR
+              is_data_column: Y
+              is_rowhash_column: Y
+              rowhash_order: 2
+          - name: LAT
+            description: ""
+            meta:
+              data_type: FLOAT
+              is_data_column: Y
+          - name: LNG
+            description: ""
+            meta:
+              data_type: FLOAT
+              is_data_column: Y
+          - name: ALT
+            description: ""
+            meta:
+              data_type: NUMBER
+              is_data_column: Y
+          - name: URL
+            description: ""
+            meta:
+              data_type: VARCHAR
+              is_data_column: Y
+          - name: SYSTEM_ADF_LOADDATE
+            description: "Date file was landed by ADF"
+            meta:
+              data_type: DATE
+              is_system_column: Y
+          - name: SYSTEM_SF_LOADDATE
+            description: "Date Time file loaded into Snowflake"
+            meta:
+              data_type: TIMESTAMP_LTZ
+              is_system_column: Y
+          - name: SYSTEM_ADF_FILENAME
+            description: "Source filename the data was loaded from"
+            meta:
+              data_type: VARCHAR(50)
+              is_system_column: Y
+          - name: SYSTEM_CREATE_DATE
+            description: "Timestamp when the record was first created"
+            meta:
+              data_type: TIMESTAMP_LTZ
+              is_system_column: Y
+          - name: SYSTEM_UPDATE_DATE
+            description: "Timestamp when the record was last updated"
+            meta:
+              data_type: TIMESTAMP_LTZ
+              is_system_column: Y
+# 
+# --- example list of standard metadata --- #
+#            meta:
+#              data_type: VARCHAR
+#              is_key_column: Y
+#              key_order: 1
+#              is_rowhash_column: Y
+#              rowhash_order: 1
+#              is_data_column: Y
+#              is_system_column: Y
+#              column_alias: 
+#              column_transform: ""
+# 
