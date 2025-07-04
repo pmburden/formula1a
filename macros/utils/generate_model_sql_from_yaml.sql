@@ -1,5 +1,10 @@
 {% macro generate_model_sql_from_yaml(yaml_path, prefix='stg_', include_source=True) %}
+
 {%- set yaml_data = load_yaml(yaml_path) %}
+{% if not yaml_data %}
+  {{ exceptions.raise_compiler_error("YAML file not found or invalid at path: " ~ yaml_path) }}
+{% endif %}
+
 {%- set output_models = [] %}
 
 {%- for source in yaml_data.get('sources', []) %}
